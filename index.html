@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>Simon</title>
+        <link rel="shortcut icon" href="#"> <!--gets rid of favicon.ico error in console-->
+    </head>
+    <body>
+        <audio id="sound-0"><source src="audio/0.mp3" type="audio/mpeg"></audio>
+        <audio id="sound-1"><source src="audio/1.mp3" type="audio/mpeg"></audio>
+        <audio id="sound-2"><source src="audio/2.mp3" type="audio/mpeg"></audio>
+        <audio id="sound-3"><source src="audio/3.mp3" type="audio/mpeg"></audio>
+        <audio id="sound-4"><source src="audio/wrong.mp3" type="audio/mpeg"></audio>
+        <div class="game-area">
+            
+            <div class="horizontal-bar"></div>
+            <div class="vertical-bar"></div>
+            <div class="inner-circle">
+                <div class="contents">
+                    <div class="score-display">
+                        Score: <span class="score">0</span>
+                    </div>
+                    <div class="sequence seq-player">New Game</div>
+                    
+                </div>
+            </div>
+            <div class="inner-circle newgame">
+                <div class="ng-text">
+                    New Game?
+                </div>
+            </div>
+            
+            <div class="color-grid">
+                <div class="btns btn-0 disable" id="btn-0"></div>
+                <div class="btns btn-1 disable" id="btn-1"></div>
+                <div class="btns btn-3 disable" id="btn-3"></div>
+                <div class="btns btn-2 disable" id="btn-2"></div>
+            </div>
+            <div class="outer-circle"></div>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
